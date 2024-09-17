@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    
+    background-color: #507687;
+}
+header h1 {
+    padding: 2rem;
+    color: #FCFAEE;
+    text-align: center;
+    font-family: "Permanent Marker";
+}
+
+#myname {
+    color: #FFEB00;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    background-color: #384B70;
+}
+
+nav a {
+    font-size: 1.5rem;
+    font-family: "Rajdhani";
+    text-decoration: none;
+    color: #FCFAEE;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.card {
+    font-family: "Rajdhani";
+    border-radius: 2rem;
+    margin: 1rem;
+    border: 2px solid #384B70 ;
+    overflow: hidden;
+    font-size: 1.5rem;
+}
+
+.card h1 {
+    padding: 0.5rem;
+    text-align: center;
+    color: #FCFAEE;
+    background-color: #507687;
+}
+
+.card p {
+    
+    padding: 1rem;
+ 
+}
+
+.country-caption {
+    margin-top: 1.5rem;
+    flex-direction: row-reverse;
+    display: flex;
+}
+
+.card h2 {
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: 0.2rem solid #384B70;
+    width: 30rem;
+}
+
+.card ul li {
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+
+.flag img {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    width: 300px;
+}
+
+.flag p {
+    font-style: italic;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #384B70;
+    height: 8rem;
+    justify-content: center;
+}
+
+footer p{
+    padding: 0.3rem;
+    font-size: 1.5rem;
+    color: #FCFAEE;
+    font-family: "Rajdhani";
+}
+
+#currentyear {
+    font-weight: 600;
+}
+
+#lastModified {
+    text-decoration: underline;
+}
+
+
+
