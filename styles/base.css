@@ -50,7 +50,7 @@ main {
     font-size: 1.5rem;
 }
 
-.card h1 {
+.card h2 {
     padding: 0.5rem;
     text-align: center;
     color: #FCFAEE;
@@ -67,13 +67,16 @@ main {
     margin-top: 1.5rem;
     flex-direction: row-reverse;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.card h2 {
+.card h3 {
     margin: 0 auto;
     text-align: center;
     border-bottom: 0.2rem solid #384B70;
     width: 30rem;
+    margin-top: 2rem;
 }
 
 .card ul li {
@@ -81,10 +84,21 @@ main {
     margin-top: 1rem;
 }
 
+#about-me {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#about-me img {
+    width: 300px;
+    border-radius: 5px;
+    margin: 1rem;
+    border: 5px solid #384B70;
+}
+
 
 .flag img {
-    margin-top: 1rem;
-    margin-left: 1rem;
+    margin: 1rem;
     width: 300px;
 }
 
