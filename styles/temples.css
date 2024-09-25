@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: "Comfortaa";
+}
+
+header {
+    padding: 1rem;
+    background-color: rgb(67, 67, 110);
+}
+
+header h1 {
+    font-size: 1.8rem;
+    color: aliceblue;
+}
+
+
+
+#menu {
+	display: block;
+	font-size: 4rem;
+	font-weight:700;
+	text-decoration: none;
+	color: #ffffff;
+    position: absolute;
+    top: -10px;
+    right: 10px;
+
+    
+}
+
+#menu::before {
+	content: "≡";
+}
+
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: aliceblue;
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: 1.2rem;
+}
+
+.navigation a:hover {
+    color: blanchedalmond;
+    text-decoration: underline;
+}
+
+.navigation li {
+    display: none;
+}
+
+.show li{
+    display: block;
+
+}
+
+#menu.show::before {
+	content: "X";
+    font-size: 2rem;
+}
+
+main {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main h2 {
+    text-align: center;
+    padding: 1rem;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 2rem;
+}
+
+figure {
+    border: 2px solid black;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+figure:hover {
+    background-color: antiquewhite;
+}
+
+figcaption {
+    padding: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+footer {
+    margin-top: 2rem;
+    background-color: rgb(67, 67, 110);
+    padding: 2rem;
+    text-align: center;
+}
+
+footer p {
+    color: aliceblue;
+
+}
+
+footer p:last-child {
+    margin-top: 0.5rem;
+}
+
