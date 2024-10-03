@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Week 3 assignment">
+    <meta name="author" content="Angelo Caringal">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap" rel="stylesheet">
+    <title>Bohol Philippines</title>
+</head>
+<body>
+    <header>
+        <h1>Bohol Philippines</h1>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 1100px )" srcset="/images/chocolate-hills-large.webp">
+                <source media="(min-width: 700px)" srcset="/images/chocolate-hills-medium.webp">
+                <img src="/images/chocolate-hills-small.webp" alt="chocolate hills">
+            </picture>
+        </div>
+    </header>
+    <main>
+        <section class="data">
+            <h2>Data</h2>
+            <hr>
+            <p>Area: <span>4,821 km²</span></p>
+            <p>Population: <span>1,394,329</span></p>
+            <p>Language: <span>Boholano</span></p>
+            <p>Tourist Attraction: <span>Chocolate Hills</span></p>
+            
+        </section>
+        <section class="weather">
+            <h2>Weather <span><img src="/images/weather-icon.svg" alt="weather icon"></span></h2>
+            <hr>
+            <p>Temperature:<span>26°C</span></p>
+            <p>Condition:<span>Cloudy</span></p>
+            <p>Wind:<span>5 km/h</span></p>
+            <p>Windchill: <span id="windchill"></span></p>
+
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"> </span> &#128522; Angelo Caringal &#128526; Philippines</p>
+        <p>Last modified: <span id="lastModified"></span></p>
+    </footer>
+    
+
+    <script defer src="scripts/getdates.js"></script>
+    <script src="scripts/place.js" defer></script>
+</body>
+</html>

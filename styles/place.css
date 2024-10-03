@@ -1,0 +1,170 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: "Playwrite DE Grund";
+}
+
+header {
+    background-color: rgb(167, 116, 13);
+    color: rgb(250, 240, 240);
+    text-align: center;
+}
+
+header h1 {
+    padding: 2rem;
+    font-size: 3rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-bottom: 20px solid rgb(50, 46, 105);
+}
+main {
+    background-color: rgba(241, 221, 191, 0.654);
+    padding: 2rem;
+}
+
+.data {
+    margin-bottom: 2rem;
+}
+
+.data p:first-of-type {
+    margin-top: 2rem;
+   
+    
+}
+.data h2  {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.weather h2 {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+
+}
+
+.weather h2 span{
+    margin: 0 auto;
+    display: block;
+    width: 7rem;
+}
+
+.weather p:first-of-type {
+    margin-top: 1rem;
+}
+
+hr {
+    width: 40%;
+    margin: 0 auto;
+}
+.data p , .weather p {
+    text-align: right;
+
+}
+
+.data span , .weather span{
+    display: inline-block;
+    width: 50%;
+    text-align: left;
+    margin-left: 1rem;
+    color: brown;
+}
+
+
+
+
+h2 {
+    font-size: 2rem;
+
+}
+
+footer {
+    padding: 2rem;
+    background-color: rgb(167, 116, 13);
+    color: aliceblue;
+    text-align: center;
+}
+
+@media only screen and (min-width: 800px) {
+    .data  {
+        top: 10rem;
+        left: 1rem;
+        position: absolute;
+        background-color: antiquewhite;
+        width: 22rem;
+        height: 15rem;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+
+    .data h2 {
+        position: absolute;
+        left: -6px;
+        margin-top: 1rem;
+        width: 80%;
+        background-color: rgb(192, 205, 133);
+        border-bottom: none;
+    }
+
+    .data p:first-of-type {
+        margin-top: 6rem;
+    }
+
+    .data span {
+        margin-left: 0.3rem;
+    }
+
+    .weather {
+        position: absolute;
+        bottom: 10rem;
+        right: 15px;
+        background-color: antiquewhite;
+        width: 20rem;
+        height: 15rem;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+
+    .weather h2 {
+        position: absolute;
+        left: -6px;
+        margin-top: 1rem;
+        width: 80%;
+        background-color: rgb(192, 205, 133);
+        border-bottom: none;
+        flex-direction: row;
+        padding-left: 4rem;
+
+    }
+
+    .weather h2 span {
+        width: 4rem;
+        margin-left: 0;
+    }
+
+    .weather p:first-of-type {
+        margin-top: 6rem;
+    }
+
+    hr {
+        display: none;
+    }
+
+    main {
+        padding: 0;
+    }
+
+    .hero {
+        overflow: hidden;
+    }
+
+}
