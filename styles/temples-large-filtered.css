@@ -1,0 +1,40 @@
+@media only screen and (min-width: 45em) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 20vh;
+        padding: 3rem;
+    }
+
+    header h1 {
+        font-size: 3rem;
+    }
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li {
+        display: block;
+    }
+
+    .navigation a {
+        font-size: 1.5rem;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    footer {
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer p {
+        font-size: 1.5rem;
+    }
+}
