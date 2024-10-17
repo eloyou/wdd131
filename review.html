@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/form.css">
+    <title>Review</title>
+</head>
+<body>
+    <h1>Number of Reviews: <span id="stats"></span></h1>
+    
+
+    <script>
+        let review = localStorage.getItem("review")
+        const stats = document.querySelector("#stats");
+        stats.textContent = review;
+    </script>
+    
+</body>
+</html>
