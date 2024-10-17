@@ -6,6 +6,10 @@
     <meta name="description" content="Week 5 assignment">
     <meta name="author" content="Angelo Caringal">
     <link rel="stylesheet" href="styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <title>Product Review</title>
 </head>
 <body>
@@ -15,7 +19,7 @@
         <form action="review.html" method="get">
             <label for="product-name">Product Name</label>
             <select name="products" id="product-name" required>
-                <option selected disabled>Select a Product</option>
+                <option selected disabled >Select a Product</option>
             </select>
             
             <label for="overall-rating">Overall Rating</label>
@@ -35,7 +39,7 @@
             <label for="date-of-installation">Date of Installation</label>
             <input id="date-of-installation" name="date-of-installation" type="date" required>
 
-            <label for="useful-features">Which features did you find useful in the product? <span style="font-style: italic; display: block;">(Check all that apply)</span></label>
+            <label for="useful-features">Which features did you find useful in the product? <span class="italic">(Check all that apply)</span></label>
             <div class="useful-features">
                 
                 <label for="feature1"><input type="checkbox" name="features" id="feature1" value="durability"> Durability </label>
@@ -47,10 +51,10 @@
                 <label for="feature4"><input type="checkbox" name="features" id="feature4" value="design"> Design </label>
             </div>
 
-            <label for="written-review">Written Review <span style="color: blue;">(optional)</span></label>
+            <label for="written-review">Written Review <span>(optional)</span></label>
             <textarea name="written-review" id="written-review"></textarea>
 
-            <label for="username">Your Name <span style="color: blue;">(optional)</span></label>
+            <label for="username">Your Name <span>(optional)</span></label>
             <input type="text" id="username">
           
             <input type="submit" value="Post Review">

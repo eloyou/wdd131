@@ -28,7 +28,7 @@ const products = [
 
 const selectProduct = document.querySelector("#product-name");
 
-selectProduct.addEventListener("click", (e) => {
+selectProduct.addEventListener("click", () => {
 
     selectProduct.innerHTML = "";
 
