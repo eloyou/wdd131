@@ -28,30 +28,15 @@ const products = [
 
 const selectProduct = document.querySelector("#product-name");
 
-selectProduct.addEventListener("click", () => {
-
-    selectProduct.innerHTML = "";
-
-    const defaultoption = document.createElement("option");
-    defaultoption.textContent = "Select a Product";
-    defaultoption.value = "";
-    defaultoption.disabled = true;
-    defaultoption.selected = true;
-    selectProduct.appendChild(defaultoption);
-
-    products.forEach((product) => {
-        
-        const option = document.createElement("option");
+products.forEach((product) => {
+  const option = document.createElement("option");
 
         
-        option.textContent = `${product.name.toUpperCase()}`;
-        option.setAttribute("value", `${product.id}`)
+  option.textContent = `${product.name.toUpperCase()}`;
+  option.setAttribute("value", `${product.id}`);
     
-        selectProduct.appendChild(option);
-        
-    })
-})
-
+  selectProduct.appendChild(option); 
+});
 
 const submitForm = document.querySelector("form");
 
