@@ -30,15 +30,18 @@ label , legend{
 }
 
 .stars div {
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    align-content: space-between;
     align-items: center;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     font-weight: 900;
-    gap: 0.5rem;
+    gap: 1rem;
+    text-align: center;
     
 }
+
 
 input[type="radio"] {
     width: 1.5rem;
