@@ -31,7 +31,7 @@ h1 {
     font-weight: 400;
 }
 
-h2 {
+h2, h3 {
     font-family: var(--secondary-font);
 }
 header h1 {
