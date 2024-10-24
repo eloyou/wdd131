@@ -80,6 +80,7 @@ izakFiles.forEach((post) => {
     const button = document.createElement("button");
 
     postImg.setAttribute("src", post.url);
+    postImg.setAttribute("loading", "lazy")
     button.textContent = "❤️";
 
     postContainer.appendChild(postImg);
