@@ -77,11 +77,61 @@ izakFiles.forEach((post) => {
 
     const postContainer = document.createElement("div");
     const postImg = document.createElement("img");
+    const button = document.createElement("button");
 
     postImg.setAttribute("src", post.url);
+    button.textContent = "❤️";
 
     postContainer.appendChild(postImg);
+    postContainer.appendChild(button);
     postWrapper.appendChild(postContainer);
 
 
 })
+
+const heartButtons = document.querySelectorAll("button");
+const heartCount = document.querySelector("#heart-count");
+
+heartCount.textContent = localStorage.getItem("heart");
+
+heartButtons.forEach((heartButton) => {
+
+    heartButton.addEventListener("click", () => {
+
+        
+
+        if (!localStorage.getItem('heart')) {
+            localStorage.setItem('heart', '0');
+        }
+        
+        let heart = parseInt(localStorage.getItem("heart"));
+
+        heart += 1;
+
+        localStorage.setItem("heart", heart.toString());
+
+        heartCount.textContent = localStorage.getItem("heart");
+        
+    
+        
+    })
+
+    
+
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

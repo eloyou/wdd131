@@ -13,6 +13,10 @@
 
 }
 
+body {
+    background-color: var(--accent-color);
+}
+
 img {
     display: block;
     width: 100%;
@@ -62,7 +66,7 @@ header {
     padding: 1rem;
     background-color: var(--primary-color);
     position: absolute;
-    bottom: -80px;
+    bottom: -100px;
     z-index: 20;
 }
 
@@ -82,17 +86,53 @@ header {
     padding: 1rem;
     justify-content: center;
     align-items: center;
+
 }
 
 .post-wrapper img {
     width: 25rem;
     height: 25rem;
     object-fit: cover;
-    opacity: 0.5;
-    background-color: var(--accent-color);
+    opacity: 0.8;
+    
 }
 
 .post-wrapper img:hover {
-    transition: 1.5s;
+    transition: 0.5s;
     opacity: 1;
+    border: 1rem solid var(--primary-color);
+}
+
+.post-wrapper div {
+    position: relative;
+}
+.post-wrapper div button {
+    border: none;
+    font-size: 3rem;
+    background-color: transparent;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+}
+
+.post-wrapper div button:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 2rem;
+    background-color: var(--primary-color);
+    padding: 2rem;
+    text-align: center;
+}
+
+footer p {
+    color: var(--secondary-color);
+    font-family: var(--secondary-font);
+
+}
+
+footer p:last-child {
+    margin-top: 0.5rem;
 }
