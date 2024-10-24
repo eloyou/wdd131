@@ -65,15 +65,7 @@ p , ul , li {
     background-color: #F3C623;
 }
 
-.wireframes-lg {
+.wireframes{
     padding: 1rem;
 }
 
-.wireframes-lg h3 , .wireframes-sm h3{
-    margin-bottom: 1rem;
-}
-
-.wireframes-sm img {
-    width: 50%;
-    margin: 0 auto;
-}
